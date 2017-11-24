@@ -3,6 +3,16 @@ elasticsearch 查询json串生成
 
 也没有找到几个好用的es库 于是就自己写了一个 根据实体生成es查询json
 
+使用方式
+```java
+   ArticleQuery query = new ArticleQuery();
+   query.setContent("内容");
+   query.setLastid(12L);
+   query.setTitle("标题");
+   QueryBuilder queryBuilder = new QueryBuilder(query);
+   System.err.println(queryBuilder.build());
+```
+
 ```java
 @DisableSourse
 public class ArticleQuery{
