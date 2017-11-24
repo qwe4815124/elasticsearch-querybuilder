@@ -65,4 +65,5 @@ public class ArticleQuery{
  
 注解 `@DisableSourse` 配置不会生成_source 不配置会生成
 
-如果你的返回类和查询类不是同一个类需要在查询类上加一个(_sort sourse 是返回类中获取的)
+如果你的返回类和查询类不是同一个类需要在查询类上加一个`@MappingType`
+(_sort sourse 是返回类中获取的)
